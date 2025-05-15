@@ -40,7 +40,7 @@ class CommentArea extends Component {
     this.setState({ loading: true, error: null });
     try {
       const resp = await fetch(
-        `https://striveschool-api.herokuapp.com/api/comments/ ${this.props.asin}`,
+        `https://striveschool-api.herokuapp.com/api/comments/${this.props.bookId}`,
         {
           headers: {
             Authorization:
