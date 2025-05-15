@@ -21,7 +21,7 @@ const BookList = ({ books }) => {
       <Row>
         {filteredBooks.map((book) => (
           <Col key={book.asin} sm={6} md={4} lg={3} className="mb-4">
-            <SingleBook book={book} />
+            <SingleBook book={{ ...book, price: book.price }} />
           </Col>
         ))}
       </Row>
