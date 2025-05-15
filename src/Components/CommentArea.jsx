@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Loading from "./Loading";
+import Error from "./Error";
 
 const CommentsList = ({ comments }) => (
   <div className="mt-3">
@@ -89,8 +91,8 @@ class CommentArea extends Component {
             Invia
           </Button>
         </Form>
-        {loading && <div>Caricamento commenti...</div>}
-        {error && <div className="text-danger">{error}</div>}
+        {loading && <Loading />} {/* Componente Loading */}
+        {error && <Error message={error} />} {/* Componente Error */}
         <CommentsList comments={comments} />
       </div>
     );
