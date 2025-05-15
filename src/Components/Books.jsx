@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Container, Button } from "react-bootstrap";
 import BookList from "./BookList";
 
-import fantasy from "./fantasy.json";
-import history from "./history.json";
-import romance from "./romance.json";
-import horror from "./horror.json";
-import scifi from "./scifi.json";
+import fantasy from "../data/fantasy.json";
+import history from "../data/history.json";
+import romance from "../data/romance.json";
+import horror from "../data/horror.json";
+import scifi from "../data/scifi.json";
 
 const bookData = {
   fantasy,

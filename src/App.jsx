@@ -1,7 +1,7 @@
-import Nav from "./Nav";
-import Footer from "./Footer";
-import Welcome from "./Welcome";
-import Books from "./Books";
+import Nav from "./Components/Nav";
+import Footer from "./Components/Footer";
+import Welcome from "./Components/Welcome";
+import Books from "./Components/Books";
 
 function App() {
   return (

@@ -29,8 +29,7 @@ class SingleBook extends Component {
             <Card.Title>{book.title}</Card.Title>
           </Card.Body>
         </Card>
-        {selected && <CommentArea bookId={book.id} />}{" "}
-        {/* Mostra CommentArea se selezionato */}
+        {selected && <CommentArea bookId={book.asin} />}
       </>
     );
   }
