@@ -27,6 +27,9 @@ class SingleBook extends Component {
           <Card.Img variant="top" src={book.img} />
           <Card.Body>
             <Card.Title>{book.title}</Card.Title>
+            <Card.Text>
+              <strong>Price:</strong> {book.price} €
+            </Card.Text>
           </Card.Body>
         </Card>
         {selected && <CommentArea bookId={book.asin} />}
